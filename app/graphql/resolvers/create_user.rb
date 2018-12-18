@@ -1,7 +1,7 @@
 class Resolvers::CreateUser < GraphQL::Function
   description 'Create User'
   argument :params, InputTypes::UserInput
-  type Types::UserType
+  type Types::User
 
   def call(_obj, args, _ctx)
     User.create!(
