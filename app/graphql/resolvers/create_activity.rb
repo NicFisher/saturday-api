@@ -6,6 +6,6 @@ class Resolvers::CreateActivity < GraphQL::Function
   def call(_obj, args, ctx)
     user = ctx[:current_user]
     params = args[:params].to_h
-    user.activities.create!(params)
+    ActivityCreator.new(params, user).perform
   end
 end
