@@ -19,7 +19,8 @@ class ActivityCreator
       kind: params["kind"].downcase,
       status: params["status"] || 'active',
       duration: params["duration"],
-      scheduled_date: params["scheduled_date"]
+      scheduled_date: params["scheduled_date"],
+      description: params["description"]
     }
   end
 end

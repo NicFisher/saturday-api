@@ -7,6 +7,6 @@ module InputTypes
     argument :scheduledDate,    !types.String,  as: :scheduled_date
     argument :duration,         !types.String,  as: :duration
     argument :status,           types.String,   as: :status
-    argument :notes,            types.String,   as: :notes
+    argument :description,      types.String,   as: :description
   end
 end
