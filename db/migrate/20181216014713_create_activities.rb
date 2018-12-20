@@ -7,7 +7,7 @@ class CreateActivities < ActiveRecord::Migration[5.2]
       t.string :duration, null: false
       t.string :title, null: false
       t.string :status, null: false
-      t.json :data, null: false, default: {}
+      t.text :description
       t.timestamps
     end
   end
