@@ -9,6 +9,6 @@ module Types
     field :duration,      types.String,       property: :duration
     field :status,        types.String,       property: :status
     field :title,         types.String,       property: :title
-    field :notes,         types.String,       property: :notes
+    field :description,   types.String,       property: :description
   end
 end

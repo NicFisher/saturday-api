@@ -1,5 +1,5 @@
 module InputTypes
-  Activity = GraphQL::InputObjectType.define do
+  CreateActivity = GraphQL::InputObjectType.define do
     name 'CreateActivityInput'
 
     argument :kind,             !types.String,  as: :kind
