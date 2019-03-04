@@ -1,6 +1,6 @@
 class Resolvers::CreateActivity < GraphQL::Function
   description 'Create Activity'
-  argument :params, InputTypes::Activity
+  argument :params, InputTypes::CreateActivity
   type Types::Activity
 
   def call(_obj, args, ctx)

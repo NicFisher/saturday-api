@@ -11,5 +11,6 @@ Types::MutationType = GraphQL::ObjectType.define do
   field :createUser, function: Resolvers::CreateUser.new
   field :createAuthToken, function: Resolvers::CreateAuthToken.new
   field :createActivity, function: Resolvers::CreateActivity.new
+  field :updateActivity, function: Resolvers::UpdateActivity.new
   field :deleteActivity, function: Resolvers::DeleteActivity.new
 end
