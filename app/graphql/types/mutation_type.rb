@@ -13,4 +13,6 @@ Types::MutationType = GraphQL::ObjectType.define do
   field :createActivity, function: Resolvers::CreateActivity.new
   field :updateActivity, function: Resolvers::UpdateActivity.new
   field :deleteActivity, function: Resolvers::DeleteActivity.new
+  field :createSignedUrl, function: Resolvers::CreateSignedUrl.new
+  field :updateUserPhoto, function: Resolvers::UpdateUserPhoto.new
 end
