@@ -6,6 +6,7 @@ module Types
     field :firstName,   types.String,   property: :first_name
     field :lastName,    types.String,   property: :last_name
     field :email,       types.String,   property: :email
+    field :photo,       types.String,   property: :photo
 
     connection :activities, Types::Activity.connection_type, property: :activities do
       resolve ->(obj, _args, _ctx) { obj.activities.where(status: 'active').order('created_at DESC, id') }
