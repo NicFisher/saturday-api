@@ -77,3 +77,5 @@ gem 'graphiql-rails', '1.4.4', group: :development
 
 gem 'fog-aws'
 gem 'mime-types'
+
+gem 'dotenv-rails', groups: [:development, :test]
